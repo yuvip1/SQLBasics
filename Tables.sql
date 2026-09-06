@@ -1,1 +1,13 @@
-CREATE TABLE ();
+CREATE TABLE student(
+    student_id INT PRIMARY KEY,
+    name VARCHAR(20),
+    major VARCHAR(20)
+
+);
+
+DESCRIBE student;
+
+DROP TABLE student;
+
+ALTER TABLE student ADD gpa DECIMAL(3, 2); --three total degits and 2 digits after the decimal point)
+ALTER TABLE student DROP COLUMN gpa;
